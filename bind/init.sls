@@ -1,7 +1,7 @@
 {% from "bind/map.jinja" import map with context %}
 
 remove_rndc_key:
-  file.absent
+  file.absent:
     - name: /etc/bind/rndc.key
 
 bind:
